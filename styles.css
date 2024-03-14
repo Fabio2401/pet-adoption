@@ -8,6 +8,7 @@ html {
 html {
   scroll-behavior: smooth;
 }
+
 body {
   font-family: 'Source Sans 3', sans-serif;
 }
@@ -168,12 +169,17 @@ body {
   font-family: 'Source Sans 3', sans-serif;
   font-size: 1.15rem;
   color: #9F9F9F;
+  cursor: pointer;
 }
 
-.pet-filter button:hover{
+.pet-filter button:hover {
+  color: #7D7D7D
+}
+
+.pet-filter .active,
+.pet-filter .active:hover {
   text-decoration: underline;
   color: #475AFF;
-  cursor: pointer;
 }
 
 .site-footer p {
@@ -276,6 +282,7 @@ body {
     padding-top: 139px;
     padding-bottom: 139px;
   }
+
   .pet-card {
     grid-template-columns: 165px 1fr;
   }
