@@ -12,7 +12,7 @@ async function getTemperatureValue() {
 getTemperatureValue()
 
 async function getPetData() {
-    const petsPromise = await fetch("https://learnwebcode.github.io/bootcamp-pet-data/pets.json")
+    const petsPromise = await fetch("https://phenomenal-jelly-1409fc.netlify.app/.netlify/functions/pets")
     const petsData = await petsPromise.json()
     petsData.forEach((pet) => {
         const clone = template.content.cloneNode(true)
